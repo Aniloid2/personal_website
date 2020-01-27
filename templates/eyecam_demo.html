@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<description> Brian Formento's personal website </description>
+<title>Brian Formento - machine learning engineer - CV </title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="static/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="static/css/style_eyecam.css" rel="stylesheet" type="text/css"> 
+<link href="static/css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="static/css/animate.css" rel="stylesheet" type="text/css">
+<script src="static/js/three.min.js"></script>
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
+<!-- // three.js - https://github.com/mrdoob/three.js
+var THREE=THREE||{REVISION:"56"} -->
+ 
+</head>
+<body>
+
+<!--Hero_Section-->
+<section id="hero_section" class="top_cont_outer">
+  <div class="hero_wrapper">
+   
+
+            <div class="card hovercard">
+                    <div class="artificial_margin">
+                    <div class="title">
+                        <h1>EyeCam</h1>
+                    </div>
+                    <div class="desc" ><b>A tool to help medical practitioners with chronic kidney disease diagnosis using retinal fundus photography</b></div>
+              
+                    <div>
+                        <video class="video" width="1000"  controls>
+                          <source src="static/video/EyeCam_demo_v4.mp4" type="video/mp4">
+                          </video>
+                    </div>
+              <div class="desc">
+                           <p>
+                              Chronic kidney disease (CKD) is a common problem affecting millions of patients worldwide, it is defined by a low blood filtration rate (GFR) in the kidneys and therefore the accumulation of harmful substances in the blood. There are various risk factors associated with the reduction in GFR of which diabetes and hypertension being two of them. This project uses a deep learning pipeline to extract novel disease markers from retinal fundus photography. A qualitative analysis of the model's low-level features point to the microvascular part of the retinal fundus image showing strong regions of activation in the microvascular structure of the eye, The network was trained using CKD clinical data and associated with the patient's retinal image. At no time does a medical practitioner influence the clinical data by looking at the image, the network learned to analyse the microvascular structure independently. This strengthens the argument that although medical practitioners struggle to detect disease markers from retinal imaging, the microvascular condition in the eye does indeed reflect the microvascular condition in the kidney. When trained on SEED, a dataset sourced from Singapore the ROC-AUC stands at 90% while PR-AUC at 74%, the model suffers from domain shift and for a practical screening tool domain adaptation techniques, which are still active research, can be investigated to solve this problem.
+                             </p>
+                             
+                    </div>
+                    <div class="desc"></div>
+                </div>
+         
+
+                </div>
+            </div>
+ 
+
+  </div>
+</section>
