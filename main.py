@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
 	return render_template("profile.html")
 
-@app.route('/eyecam')
+@app.route('/eye')
 def eyecam_demo():
 	return render_template("eyecam_demo.html")
 
