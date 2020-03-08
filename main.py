@@ -12,5 +12,9 @@ def index():
 def eyecam_demo():
 	return render_template("eyecam_demo.html")
 
+@app.route('/asv')
+def asv_demo():
+	return render_template("asv_demo.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)

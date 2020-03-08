@@ -1,0 +1,116 @@
+ $(document).ready(function($) {
+    $('#accordion').find('.accordion-toggle').click(function(){
+      //Expand or collapse this panel
+      $(this).next().slideToggle('fast');
+	  $(this).toggleClass('active');
+	  $(this).find('span').toggleClass('rotate180');
+      //Hide the other panels
+
+      $(".accordion-content").not($(this).next()).slideUp('fast');
+	  $(".accordion-toggle").not($(this)).removeClass('active');
+	  $(".accordion-toggle").not($(this)).find('span').removeClass('rotate180'); 
+
+    });
+  });
+
+$(window).load(function() {
+  $('#slider-testimonials .flexslider').flexslider({
+    animation: "slide",
+    slideshow: false
+  });
+  
+  $('#slider-welcome .flexslider').flexslider({
+    animation: "slide",
+    slideshow: true
+  });
+  
+  
+ 
+	
+	var $gallery = $('.featured-pages').flickity({
+		  // options
+  	  wrapAround: true,
+	  imagesLoaded: true,
+	  pageDots: false,
+	  freeScroll: true,
+	  autoPlay: 4000,
+	  groupCells: 2
+		
+	});
+	$gallery.css({ opacity: 1 });
+	 
+
+});
+
+$(window).load(function() {	
+	
+	$( ".arrow-down" ).click(function() {
+		$("html, body").animate({ scrollTop: $('#welcome').offset().top - 124 }, 1000);
+	});	
+ 
+ 	$("#military").click(function(){
+	    $("#dropdown-section-military").slideToggle();
+	     $('.plus-military img').toggleClass('turn');
+	     $('#dropdown-section-commercial').hide();
+  	     $('.plus-commercial img').removeClass('turn');
+ 	});
+ 	
+ 	$("#commercial").click(function(){
+	    $("#dropdown-section-commercial").slideToggle();
+	    $('.plus-commercial img').toggleClass('turn');
+	    $('#dropdown-section-military').hide();
+		$('.plus-military img').removeClass('turn');
+ 	});
+ 	
+ 	$(".switch, .military").click(function(){
+		$('#dropdown-section-military').slideToggle();
+	    $("#dropdown-section-commercial").slideToggle();
+	    $(".switch i, .switch .military i").toggleClass("rotate")();
+		$('.plus-military img').toggleClass('turn');
+	});
+	
+	$('#applications-btn').on('click', function(){
+     $('#applications').slideToggle();
+     $('#applications-btn i').toggleClass('flip');
+	});
+	
+	$("a.mobile-menu-button").click(function(){
+		$("#mobile-menu").slideToggle();
+    });
+});
+
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+    
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+}); 
+
+
+  $(document).ready(function(){ 
+	$('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+  	if ($(window).width() > 860) {
+    $("#header-wrap").sticky({topSpacing:0});
+	}
+
+	$(document).on('click', '.yamm .dropdown-menu', function(e) {
+  e.stopPropagation()
+})
+
+	
+
+  });

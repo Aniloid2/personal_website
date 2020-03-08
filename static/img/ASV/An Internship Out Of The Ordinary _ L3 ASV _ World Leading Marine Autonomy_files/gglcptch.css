@@ -1,0 +1,64 @@
+#commentform .gglcptch,
+.subscrbr-sign-up-form .gglcptch {
+	margin: 0 0 10px;
+}
+#recaptcha_response_field {
+	height: 17px !important;
+	max-height: 35px !important;
+	font-size: 10pt !important;
+}
+.recaptcha_theme_clean #recaptcha_response_field {
+	height: 25px !important;
+}
+#gglcptch_error {
+	color: #F00;
+}
+.gglcptch table#recaptcha_table {
+	table-layout: auto !important;
+}
+.ac-reply-content-gglcptch,
+.gglcptch_buddypress_group_form {
+	margin: 15px 0 0;
+}
+/* in whitelist notification message */
+.gglcptch_whitelist_message {
+	display: block;
+	margin: 12px 0;
+}
+.gglcptch_v2 {
+	min-width: 1px;
+	padding: 10px 0;
+	clear: both;
+}
+.gglcptch_recaptcha .grecaptcha-badge {
+	z-index: 100;
+}
+#bp-login-widget-form .gglcptch {
+	margin-top: 10px;
+}
+/* woocommerce Checkout form */
+.woocommerce-billing-fields .gglcptch,
+.woocommerce-billing-fields .gglcptch_whitelist_message {
+	clear: both;
+}
+#et-boc .et_pb_contact_form .gglcptch_et_pb_contact_field_half{
+	padding: 0 0 0 3%;
+	margin-bottom: 3%;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	float: left;
+}
+#et-boc .gglcptch_et_pb_contact_field_half .gglcptch_recaptcha div{
+	float: right;
+}
+#et-boc .gglcptch_et_pb_contact_field_half .error_gglcptch {
+	float: right;
+	color: #ff333b;
+}
+#et-boc .et_pb_newsletter_form .gglcptch_et_pb_contact_login .gglcptch_recaptcha div{
+	margin-bottom: 15px;
+}
+#et-boc .et_pb_newsletter_form .gglcptch_et_pb_contact_login p{
+	text-align: right;
+}
